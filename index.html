@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Rohit Mehandi Artist</title>
-
-  <meta name="description"
-        content="Rohit Mehandi Artist, Tirupati. सुंदर मेहंदी डिजाइन और बुकिंग के लिए संपर्क करें।">
+  <title>Rohit Mehandi Artist | Tirupati</title>
+  <meta name="description" content="Explore beautiful mehndi designs by Rohit Mehandi Artist in Tirupati, Andhra Pradesh. Contact us for bookings.">
 
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -27,35 +29,41 @@
       background: #54251f;
       color: white;
       text-align: center;
-      padding: 28px 12px;
+      padding: 30px 15px;
     }
 
     header h1 {
-      font-size: 28px;
+      font-size: 30px;
     }
 
     nav {
       background: #71392c;
-      padding: 12px 5px;
+      padding: 13px 5px;
       text-align: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 8px;
+      margin: 0 9px;
+      font-size: 14px;
       font-weight: bold;
     }
 
     .hero {
       background: #f4e2d2;
-      padding: 42px 16px;
+      padding: 55px 18px;
       text-align: center;
     }
 
     .hero h2 {
-      font-size: 28px;
+      font-size: 32px;
       margin-bottom: 12px;
+      color: #71392c;
+    }
+
+    .hero p {
+      margin-bottom: 20px;
     }
 
     .btn {
@@ -63,7 +71,7 @@
       background: #8a3029;
       color: white;
       padding: 11px 19px;
-      margin: 8px 4px;
+      margin: 7px 4px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
@@ -74,24 +82,27 @@
     }
 
     .section {
-      padding: 35px 15px;
+      padding: 40px 15px;
       text-align: center;
     }
 
-    .section h2 {
+    .section h2,
+    .about h2 {
       color: #71392c;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
+      font-size: 27px;
     }
 
     .gallery {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 12px;
-      max-width: 900px;
+      max-width: 950px;
       margin: auto;
     }
 
     .gallery img {
+      display: block;
       width: 100%;
       height: 220px;
       object-fit: cover;
@@ -101,15 +112,20 @@
 
     .about {
       background: #f4e2d2;
-      padding: 35px 18px;
+      padding: 40px 20px;
       text-align: center;
+    }
+
+    .about p {
+      max-width: 650px;
+      margin: auto;
     }
 
     .contact-card {
       background: white;
       border: 1px solid #ead2bf;
       border-radius: 12px;
-      padding: 22px 15px;
+      padding: 24px 15px;
       max-width: 600px;
       margin: auto;
       overflow-wrap: anywhere;
@@ -117,6 +133,10 @@
 
     .contact-card p {
       margin: 12px 0;
+    }
+
+    .contact-card a:not(.btn) {
+      color: #71392c;
     }
 
     footer {
@@ -142,79 +162,76 @@
 
   <header>
     <h1>🌿 Rohit Mehandi Artist 🌿</h1>
-    <p>आपके हाथों की खूबसूरती, हमारी कला</p>
-    <p>📍 Tirupati, Andhra Pradesh</p>
+    <p>Beautiful Mehndi Art for Every Occasion</p>
+    <p>Tirupati, Andhra Pradesh</p>
   </header>
 
   <nav>
-    <a href="#home">होम</a>
-    <a href="#gallery">डिजाइन्स</a>
-    <a href="#about">हमारे बारे में</a>
-    <a href="#contact">संपर्क</a>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <section class="hero" id="home">
-    <h2>खूबसूरत मेहंदी डिजाइन्स</h2>
-    <p>शादी, पार्टी और त्योहारों के लिए सुंदर मेहंदी कला।</p>
-    <a class="btn" href="#gallery">डिजाइन्स देखें</a>
+    <h2>Beautiful Mehndi Designs</h2>
+    <p>
+      Elegant mehndi designs for weddings,
+      parties, festivals and special occasions.
+    </p>
+
+    <a class="btn" href="#gallery">Explore Designs</a>
+
     <a class="btn whatsapp"
        href="https://wa.me/919329689065"
        target="_blank" rel="noopener">
-      WhatsApp बुकिंग
+      Book on WhatsApp
     </a>
   </section>
 
   <section class="section" id="gallery">
-    <h2>✨ हमारी मेहंदी गैलरी ✨</h2>
+    <h2>Our Mehndi Gallery</h2>
 
     <div class="gallery">
-      <img src="IMG-20261013-WA0021.jpg"
-           alt="मेहंदी डिजाइन 1">
-
-      <img src="IMG-20261013_154131.jpg"
-           alt="मेहंदी डिजाइन 2">
-
-      <img src="IMG-20261013_154301.jpg"
-           alt="मेहंदी डिजाइन 3">
-
-      <img src="IMG-20261013_154346.jpg"
-           alt="मेहंदी डिजाइन 4">
-
-      <img src="IMG-20261013_154437.jpg"
-           alt="मेहंदी डिजाइन 5">
+      <img src="IMG-20261013-WA0021.jpg" alt="Mehndi Design 1">
+      <img src="IMG-20261013_154131.jpg" alt="Mehndi Design 2">
+      <img src="IMG-20261013_154301.jpg" alt="Mehndi Design 3">
+      <img src="IMG-20261013_154346.jpg" alt="Mehndi Design 4">
+      <img src="IMG-20261013_154437.jpg" alt="Mehndi Design 5">
     </div>
   </section>
 
   <section class="about" id="about">
-    <h2>हमारे बारे में</h2>
+    <h2>About Us</h2>
+
     <p>
-      स्वागत है Rohit Mehandi Artist में!
-      यहाँ आप मेहंदी के खूबसूरत डिजाइन्स देख सकते हैं।
-      बुकिंग और जानकारी के लिए हमसे संपर्क करें।
+      Welcome to Rohit Mehandi Artist!
+      Explore beautiful mehndi designs for your
+      special occasions. Contact us to discuss
+      your preferred design and booking details.
     </p>
   </section>
 
   <section class="section" id="contact">
-    <h2>📞 संपर्क करें</h2>
+    <h2>Contact Us</h2>
 
     <div class="contact-card">
-
       <h3>Rohit Mehandi Artist</h3>
 
-      <p><strong>मोबाइल नंबर:</strong></p>
+      <p><strong>Phone Number</strong></p>
+
       <p>
-        <a href="tel:+919329689065">
-          +91 93296 89065
-        </a>
+        <a href="tel:+919329689065">+91 93296 89065</a>
       </p>
 
       <a class="btn whatsapp"
          href="https://wa.me/919329689065"
          target="_blank" rel="noopener">
-        WhatsApp पर संपर्क करें
+        Chat on WhatsApp
       </a>
 
-      <p><strong>📍 हमारा पता:</strong></p>
+      <p><strong>Our Address</strong></p>
+
       <p>
         TK State, Pashupati Supermarket,<br>
         Reddy and Reddy's Colony,<br>
@@ -224,17 +241,15 @@
       <a class="btn"
          href="https://www.google.com/maps/search/?api=1&query=TK+State+Pashupati+Supermarket+Reddy+and+Reddys+Colony+Tirupati+Andhra+Pradesh+517501"
          target="_blank" rel="noopener">
-        Google Maps पर रास्ता देखें
+        Get Directions
       </a>
-
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Rohit Mehandi Artist</p>
+    <p>© 2026 Rohit Mehandi Artist. All rights reserved.</p>
     <p>Made with ❤️</p>
   </footer>
 
 </body>
 </html>
-
