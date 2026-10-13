@@ -4,10 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Rohit Mehandi Artist | Tirupati</title>
-  <meta name="description" content="Explore beautiful mehndi designs by Rohit Mehandi Artist in Tirupati, Andhra Pradesh. Contact us for bookings.">
+  <title>Rohit Mehandi Artist | Bridal Mehndi in Tirupati</title>
+  <meta name="description" content="Discover beautiful bridal mehndi designs by Rohit Mehandi Artist in Tirupati, Andhra Pradesh. Contact us for bookings.">
 
   <style>
+    :root {
+      --maroon: #57251f;
+      --wine: #78372e;
+      --gold: #c59b59;
+      --cream: #fff9f1;
+      --text: #382720;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -20,115 +28,198 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #fffaf4;
-      color: #38251c;
+      background: var(--cream);
+      color: var(--text);
       line-height: 1.7;
     }
 
-    header {
-      background: #54251f;
-      color: white;
-      text-align: center;
-      padding: 30px 15px;
+    a {
+      text-decoration: none;
     }
 
-    header h1 {
-      font-size: 30px;
+    header {
+      background: var(--maroon);
+      color: white;
+      padding: 18px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand {
+      font-family: Georgia, serif;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .brand span {
+      color: #e5bd78;
     }
 
     nav {
-      background: #71392c;
-      padding: 13px 5px;
-      text-align: center;
+      display: flex;
+      gap: 17px;
+      flex-wrap: wrap;
     }
 
     nav a {
       color: white;
-      text-decoration: none;
-      margin: 0 9px;
       font-size: 14px;
-      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #e5bd78;
     }
 
     .hero {
-      background: #f4e2d2;
-      padding: 55px 18px;
+      min-height: 470px;
+      padding: 65px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      background:
+        radial-gradient(circle at top right, #f0ddc3, transparent 45%),
+        linear-gradient(135deg, #fff8ed, #f1dfca);
     }
 
-    .hero h2 {
-      font-size: 32px;
-      margin-bottom: 12px;
-      color: #71392c;
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      color: var(--wine);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(36px, 7vw, 60px);
+      line-height: 1.15;
+      margin: 17px 0;
+      color: var(--maroon);
+    }
+
+    .hero h1 span {
+      color: #a87836;
     }
 
     .hero p {
-      margin-bottom: 20px;
+      max-width: 570px;
+      margin: 0 auto 24px;
+      color: #68574b;
     }
 
     .btn {
       display: inline-block;
-      background: #8a3029;
+      background: var(--maroon);
       color: white;
-      padding: 11px 19px;
-      margin: 7px 4px;
-      border-radius: 8px;
-      text-decoration: none;
+      padding: 12px 21px;
+      border-radius: 5px;
+      margin: 5px;
       font-weight: bold;
+      font-size: 14px;
     }
 
-    .whatsapp {
-      background: #168a45;
+    .btn:hover {
+      background: var(--wine);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #28170e;
     }
 
     .section {
-      padding: 40px 15px;
+      padding: 55px 18px;
       text-align: center;
     }
 
-    .section h2,
-    .about h2 {
-      color: #71392c;
-      margin-bottom: 22px;
-      font-size: 27px;
+    .section h2 {
+      color: var(--maroon);
+      font-family: Georgia, serif;
+      font-size: clamp(28px, 5vw, 38px);
+      margin-bottom: 10px;
+    }
+
+    .section-intro {
+      color: #79685d;
+      margin: 0 auto 28px;
+      max-width: 620px;
     }
 
     .gallery {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-      max-width: 950px;
-      margin: auto;
+      gap: 13px;
+      max-width: 1000px;
+      margin: 28px auto 0;
     }
 
     .gallery img {
       display: block;
       width: 100%;
-      height: 220px;
+      height: 230px;
       object-fit: cover;
-      border-radius: 10px;
-      border: 2px solid #ead2bf;
+      border-radius: 9px;
+      border: 1px solid #e4d1ba;
+      background: #f1e4d5;
     }
 
     .about {
-      background: #f4e2d2;
-      padding: 40px 20px;
-      text-align: center;
+      background: #f1e2d1;
     }
 
-    .about p {
-      max-width: 650px;
+    .about-content {
+      max-width: 700px;
       margin: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      max-width: 800px;
+      margin: 28px auto 0;
+    }
+
+    .feature {
+      background: #fffaf4;
+      border: 1px solid #e5d2bc;
+      padding: 20px 12px;
+      border-radius: 9px;
+    }
+
+    .feature h3 {
+      color: var(--maroon);
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    .feature p {
+      font-size: 14px;
+      color: #756358;
     }
 
     .contact-card {
-      background: white;
-      border: 1px solid #ead2bf;
-      border-radius: 12px;
-      padding: 24px 15px;
-      max-width: 600px;
+      max-width: 650px;
       margin: auto;
+      padding: 25px 17px;
+      border: 1px solid #e5d2bc;
+      border-radius: 12px;
+      background: white;
       overflow-wrap: anywhere;
+    }
+
+    .contact-card h3 {
+      color: var(--maroon);
+      font-size: 23px;
+      margin-bottom: 15px;
     }
 
     .contact-card p {
@@ -136,23 +227,67 @@
     }
 
     .contact-card a:not(.btn) {
-      color: #71392c;
+      color: var(--wine);
     }
 
     footer {
-      background: #54251f;
+      background: var(--maroon);
       color: white;
       text-align: center;
-      padding: 20px 10px;
+      padding: 24px 15px;
+      font-size: 13px;
     }
 
-    @media (min-width: 650px) {
+    footer p {
+      margin: 4px 0;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 15px;
+      bottom: 20px;
+      background: #168a45;
+      color: white;
+      padding: 12px 15px;
+      border-radius: 30px;
+      box-shadow: 0 3px 12px #0003;
+      z-index: 10;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    @media (min-width: 700px) {
       .gallery {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
       }
 
       .gallery img {
-        height: 280px;
+        height: 300px;
+      }
+
+      .features {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .hero {
+        min-height: 520px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .gallery img {
+        height: 190px;
       }
     }
   </style>
@@ -161,100 +296,168 @@
 <body>
 
   <header>
-    <h1>🌿 Rohit Mehandi Artist 🌿</h1>
-    <p>Beautiful Mehndi Art for Every Occasion</p>
-    <p>Tirupati, Andhra Pradesh</p>
+    <a class="brand" href="#home">
+      Rohit <span>Mehandi Artist</span>
+    </a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Artistry • Tradition • Elegance</p>
 
-  <section class="hero" id="home">
-    <h2>Beautiful Mehndi Designs</h2>
-    <p>
-      Elegant mehndi designs for weddings,
-      parties, festivals and special occasions.
-    </p>
+        <h1>Beautiful Mehndi,<br>
+          <span>Unforgettable Moments</span>
+        </h1>
 
-    <a class="btn" href="#gallery">Explore Designs</a>
+        <p>
+          Discover elegant mehndi designs for weddings,
+          celebrations, festivals and life's special moments.
+          Let your hands tell a beautiful story.
+        </p>
 
-    <a class="btn whatsapp"
-       href="https://wa.me/919329689065"
-       target="_blank" rel="noopener">
-      Book on WhatsApp
-    </a>
-  </section>
+        <a class="btn" href="#gallery">Explore Our Gallery</a>
 
-  <section class="section" id="gallery">
-    <h2>Our Mehndi Gallery</h2>
+        <a class="btn btn-gold"
+           href="https://wa.me/919329689065"
+           target="_blank" rel="noopener">
+          Book on WhatsApp
+        </a>
+      </div>
+    </section>
 
-    <div class="gallery">
-  <img src="IMG-20261013-WA0021.jpg" alt="Mehndi Design 1">
+    <section class="section" id="gallery">
+      <p class="eyebrow">Our Creations</p>
+      <h2>Our Mehndi Gallery</h2>
 
-  <img src="IMG_20261013_154131.jpg" alt="Mehndi Design 2">
-
-  <img src="IMG_20261013_154301.jpg" alt="Mehndi Design 3">
-
-  <img src="IMG_20261013_154346.jpg" alt="Mehndi Design 4">
-
-  <img src="IMG_20261013_154437.jpg" alt="Mehndi Design 5">
-      <img src="file_000000005ef08230b79c85c11decb80e.png" alt="Mehndi Design 6">
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <h2>About Us</h2>
-
-    <p>
-      Welcome to Rohit Mehandi Artist!
-      Explore beautiful mehndi designs for your
-      special occasions. Contact us to discuss
-      your preferred design and booking details.
-    </p>
-  </section>
-
-  <section class="section" id="contact">
-    <h2>Contact Us</h2>
-
-    <div class="contact-card">
-      <h3>Rohit Mehandi Artist</h3>
-
-      <p><strong>Phone Number</strong></p>
-
-      <p>
-        <a href="tel:+919329689065">+91 93296 89065</a>
+      <p class="section-intro">
+        Explore our collection of mehndi art and find
+        inspiration for your special occasion.
       </p>
 
-      <a class="btn whatsapp"
-         href="https://wa.me/919329689065"
-         target="_blank" rel="noopener">
-        Chat on WhatsApp
-      </a>
+      <div class="gallery">
+        <img src="IMG-20261013-WA0021.jpg"
+             alt="Mehndi design 1" loading="lazy">
 
-      <p><strong>Our Address</strong></p>
+        <img src="IMG_20261013_154131.jpg"
+             alt="Mehndi design 2" loading="lazy">
 
-      <p>
-        TK State, Pashupati Supermarket,<br>
-        Reddy and Reddy's Colony,<br>
-        Tirupati, Andhra Pradesh 517501
+        <img src="IMG_20261013_154301.jpg"
+             alt="Mehndi design 3" loading="lazy">
+
+        <img src="IMG_20261013_154346.jpg"
+             alt="Mehndi design 4" loading="lazy">
+
+        <img src="IMG_20261013_154437.jpg"
+             alt="Mehndi design 5" loading="lazy">
+
+        <img src="file_000000005ef08230b79c85c11decb80e.png"
+             alt="Mehndi design 6" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-content">
+        <p class="eyebrow">Welcome to Our Studio</p>
+        <h2>About Rohit Mehandi Artist</h2>
+
+        <p>
+          We love creating beautiful mehndi designs for
+          your most memorable occasions. From bridal looks
+          to festive patterns, explore our gallery and
+          contact us to discuss your preferred design.
+        </p>
+
+        <div class="features">
+          <div class="feature">
+            <h3>Bridal Mehndi</h3>
+            <p>Beautiful designs for wedding celebrations.</p>
+          </div>
+
+          <div class="feature">
+            <h3>Traditional Art</h3>
+            <p>Classic patterns inspired by tradition.</p>
+          </div>
+
+          <div class="feature">
+            <h3>Festive Designs</h3>
+            <p>Lovely styles for special occasions.</p>
+          </div>
+
+          <div class="feature">
+            <h3>Personal Booking</h3>
+            <p>Contact us to discuss your requirements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <p class="eyebrow">We'd Love to Hear From You</p>
+      <h2>Contact & Bookings</h2>
+
+      <p class="section-intro">
+        Get in touch to enquire about mehndi designs
+        and booking availability.
       </p>
 
-      <a class="btn"
-         href="https://www.google.com/maps/search/?api=1&query=TK+State+Pashupati+Supermarket+Reddy+and+Reddys+Colony+Tirupati+Andhra+Pradesh+517501"
-         target="_blank" rel="noopener">
-        Get Directions
-      </a>
-    </div>
-  </section>
+      <div class="contact-card">
+        <h3>Rohit Mehandi Artist</h3>
+
+        <p><strong>Phone / WhatsApp</strong></p>
+        <p>
+          <a href="tel:+919329689065">+91 93296 89065</a>
+        </p>
+
+        <a class="btn"
+           href="tel:+919329689065">
+          Call Now
+        </a>
+
+        <a class="btn"
+           style="background:#168a45"
+           href="https://wa.me/919329689065"
+           target="_blank" rel="noopener">
+          Chat on WhatsApp
+        </a>
+
+        <p><strong>Our Location</strong></p>
+
+        <p>
+          TK State, Pashupati Supermarket,<br>
+          Reddy and Reddy's Colony,<br>
+          Tirupati, Andhra Pradesh 517501
+        </p>
+
+        <a class="btn btn-gold"
+           href="https://www.google.com/maps/search/?api=1&query=TK+State+Pashupati+Supermarket+Reddy+and+Reddys+Colony+Tirupati+Andhra+Pradesh+517501"
+           target="_blank" rel="noopener">
+          Get Directions
+        </a>
+      </div>
+    </section>
+  </main>
 
   <footer>
+    <p><strong>Rohit Mehandi Artist</strong></p>
+    <p>Tirupati, Andhra Pradesh, India</p>
     <p>© 2026 Rohit Mehandi Artist. All rights reserved.</p>
-    <p>Made with ❤️</p>
+    <p>Made with love ❤️</p>
   </footer>
+
+  <a class="whatsapp-float"
+     href="https://wa.me/919329689065"
+     target="_blank" rel="noopener"
+     aria-label="Book on WhatsApp">
+    WhatsApp Booking
+  </a>
 
 </body>
 </html>
